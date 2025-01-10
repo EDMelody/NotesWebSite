@@ -1,3 +1,12 @@
+/*
+ * @Author: 
+ * @Date: 2025-01-10 11:10:38
+ * @LastEditors: 
+ * @LastEditTime: 2025-01-10 15:38:21
+ * @FilePath: \vuepress-vite\docs\.vitepress\zh.ts
+ * @Description: 
+ * 
+ */
 import { DefaultTheme, defineConfig } from 'vitepress'
 
 export const zh = defineConfig({
@@ -26,7 +35,7 @@ export const zh = defineConfig({
       },
       
       editLink: {
-        pattern: 'https://gitee.com/zjySworld/vue-press/tree/master/vuepress-vite/docs/:path',
+        pattern: 'https://github.com/EDMelody/NotesWebSite/tree/master/docs/:path',
         text: '在 GitHub 上编辑此页面'
       },
   
@@ -44,7 +53,7 @@ export const zh = defineConfig({
       // lightModeSwitchTitle: '切换到浅色模式',
       // darkModeSwitchTitle: '切换到深色模式'
       socialLinks: [
-        { icon: 'github', link: 'https://gitee.com/zjySworld/vue-press/tree/master/vuepress-vite' }
+        { icon: 'github', link: 'https://github.com/EDMelody/NotesWebSite' }
       ]
     }
 })
