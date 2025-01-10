@@ -13,7 +13,8 @@ export const zh = defineConfig({
       nav: nav(),
   
       sidebar: {
-        '/zh/programming/vue/': sidebarVue(),
+        '/zh/programming/vue/vue2/': sidebarVue2(),
+        '/zh/programming/vue/vue3/': sidebarVue3(),
         '/zh/programming/nginx/': sidebarNginx(),
         '/zh/programming/git/': sidebarGit(),
         '/zh/programming/node/': sidebarNode(),
@@ -72,33 +73,8 @@ function nav(): DefaultTheme.NavItem[] {
 }
 
 // vue侧边栏
-function sidebarVue(): DefaultTheme.SidebarItem[] {
+function sidebarVue2(): DefaultTheme.SidebarItem[] {
     return [
-        {
-            text: 'Vue3',
-            collapsed: false,
-            items: [
-                {
-                    text: '安装使用',
-                    link: '/zh/programming/vue/vue3/downloadUse'
-                }
-            ]
-        },
-        {
-            text: 'Vue3组件封装',
-            collapsed: false,
-            items: []
-        },
-        {
-            text: 'Vue3问题',
-            collapsed: false,
-            items: [
-                {
-                    text: '类型断言',
-                    link: '/zh/programming/vue/vue3/question/typeAssertion'
-                }
-            ]
-        },
         {
             text: 'Vue2',
             collapsed: false,
@@ -120,6 +96,35 @@ function sidebarVue(): DefaultTheme.SidebarItem[] {
             ]
         },
     ]
+}
+function sidebarVue3(): DefaultTheme.SidebarItem[] {
+  return [
+      {
+          text: 'Vue3',
+          collapsed: false,
+          items: [
+              {
+                  text: '安装使用',
+                  link: '/zh/programming/vue/vue3/downloadUse'
+              }
+          ]
+      },
+      {
+          text: 'Vue3组件封装',
+          collapsed: false,
+          items: []
+      },
+      {
+          text: 'Vue3问题',
+          collapsed: false,
+          items: [
+              {
+                  text: '类型断言',
+                  link: '/zh/programming/vue/vue3/question/typeAssertion'
+              }
+          ]
+      },
+  ]
 }
 
 // nginx侧边栏

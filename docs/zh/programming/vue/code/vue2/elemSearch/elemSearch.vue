@@ -1,9 +1,9 @@
 <!--
  * @Author: melody lv
  * @Date:
- * @LastEditors: melody lv
- * @LastEditTime:
- * @FilePath: \components\commonSearch.vue
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2025-01-10 15:09:59
+ * @FilePath: \vuepress-vite\docs\zh\programming\vue\code\vue2\elemSearch\elemSearch.vue
  * @Description: 搜索公共组件
  * 
 -->
