@@ -1,3 +1,12 @@
+<!--
+ * @Author: 
+ * @Date: 2025-01-10 11:10:39
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2025-01-13 17:30:18
+ * @FilePath: \vuepress-vite\docs\zh\programming\vue\vue2\downloadUse.md
+ * @Description: 
+ * 
+-->
 # Vue2 (官方已停更)
 
 ## 参考

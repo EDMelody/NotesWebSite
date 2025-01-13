@@ -1,12 +1,3 @@
-/*
- * @Author: 
- * @Date: 2025-01-10 11:10:38
- * @LastEditors: 
- * @LastEditTime: 2025-01-10 15:38:21
- * @FilePath: \vuepress-vite\docs\.vitepress\zh.ts
- * @Description: 
- * 
- */
 import { DefaultTheme, defineConfig } from 'vitepress'
 
 export const zh = defineConfig({

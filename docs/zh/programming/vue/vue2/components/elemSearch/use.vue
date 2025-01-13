@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import commonSearch from '@/zh/programming/vue/code/vue2/elemSearch/elemSearch.vue'
+  import commonSearch from '../elemSearch/elemSearch.vue'
 
   export default {
     name: "test",

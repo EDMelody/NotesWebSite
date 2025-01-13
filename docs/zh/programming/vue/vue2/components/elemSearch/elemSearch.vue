@@ -2,13 +2,11 @@
  * @Author: melody lv
  * @Date:
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2025-01-13 16:35:44
- * @FilePath: \vuepress-vite\docs\zh\programming\vue\code\vue2\elemSearch\elemSearch.vue
+ * @LastEditTime: 2025-01-13 16:44:47
+ * @FilePath: \vuepress-vite\docs\zh\programming\vue\vue2\components\elemSearch\elemSearch.vue
  * @Description: 搜索公共组件
  * 
 -->
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
-
 <template>
   <div class="common-search">
     <el-card shadow="never">
@@ -247,7 +245,7 @@
   }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
   .title-flex {
     width: 100%;
     height: 100%;
