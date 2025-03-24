@@ -95,6 +95,16 @@ function sidebarVue2(): DefaultTheme.SidebarItem[] {
                 }
             ]
         },
+        {
+            text: '相关问题',
+            collapsed: false,
+            items: [
+                {
+                    text: 'el-table问题',
+                    link: '/zh/programming/vue/vue2/question/index'
+                }
+            ]
+        }
     ]
 }
 function sidebarVue3(): DefaultTheme.SidebarItem[] {
