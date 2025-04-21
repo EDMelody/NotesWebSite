@@ -1,15 +1,17 @@
 {
   "scripts": {
-    "docs:dev": "vitepress dev docs",
+    "docs:dev": "vitepress dev docs --host",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "deploy": "gh-pages -d docs/.vitepress/dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "markdown-it": "^14.1.0",
     "markdown-it-mathjax3": "^4.3.2",
     "unplugin-auto-import": "^19.0.0",
     "unplugin-vue-components": "^28.0.0",
-    "vitepress": "^1.5.0"
+    "vitepress": "^1.6.3"
   },
   "dependencies": {
     "element-plus": "^2.9.3"

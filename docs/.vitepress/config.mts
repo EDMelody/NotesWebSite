@@ -5,6 +5,8 @@ import { shared } from './shared'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/NotesWebSite/',
+  ignoreDeadLinks: true,
   ...shared,
   locales: {
     root: { label: '简体中文', ...zh }, // root配置了才可以语言切换，这边 root 是默认

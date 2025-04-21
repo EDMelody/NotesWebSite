@@ -1,4 +1,6 @@
 *.cache
 *.temp
 node_modules
-cache
+cache/
+dist/
+package-lock.json
