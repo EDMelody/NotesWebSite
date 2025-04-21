@@ -9,15 +9,15 @@ hero:
   actions:
     - theme: brand
       text: Vue3
-      link: /zh/programming/vue/vue3/downloadUse
-    - theme: alt
-      text: Nginx
-      link: /zh/programming/nginx/downloadUse
+      link: /zh/programming/vue/vue2/downloadUse
+    # - theme: alt
+    #   text: Nginx
+    #   link: /zh/programming/nginx/downloadUse
 
 features:
-  - title: Vue3
+  - title: Vue2
     details: 安装使用
-    link: /zh/programming/vue/vue3/downloadUse
+    link: /zh/programming/vue/vue2/downloadUse
   - title: VitePress
     details: 官方网站哦
     link: https://vitepress.dev/
