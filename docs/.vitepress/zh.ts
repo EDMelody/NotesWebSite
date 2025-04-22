@@ -52,22 +52,22 @@ export const zh = defineConfig({
 // 顶部导航栏
 function nav(): DefaultTheme.NavItem[] {
     return [
-        // { text: '首页', link: '/' },
-        // { text: '编程',
-        //     items: [
-        //         { text: 'vue版本', items: 
-        //             [
-        //                 { text: 'vue2', link: '/zh/programming/vue/vue2/downloadUse' },
-        //                 { text: 'vue3', link: '/zh/programming/vue/vue3/downloadUse' }
-        //             ] 
-        //         },
-        //         { text: 'nginx', link: '/zh/programming/nginx/downloadUse' },
-        //         { text: 'git', link: '/zh/programming/git/reference' },
-        //         { text: 'node', link: '/zh/programming/node/downloadUse' },
-        //         { text: 'scoop', link: '/zh/programming/scoop/index' },
-        //     ],
-        // },
-        // { text: '数学', link: '/zh/math/index' },
+        { text: '首页', link: '/' },
+        { text: '编程',
+            items: [
+                { text: 'vue版本', items: 
+                    [
+                        { text: 'vue2', link: '/zh/programming/vue/vue2/downloadUse' },
+                        { text: 'vue3', link: '/zh/programming/vue/vue3/downloadUse' }
+                    ] 
+                },
+                { text: 'nginx', link: '/zh/programming/nginx/downloadUse' },
+                { text: 'git', link: '/zh/programming/git/reference' },
+                { text: 'node', link: '/zh/programming/node/downloadUse' },
+                { text: 'scoop', link: '/zh/programming/scoop/index' },
+            ],
+        },
+        { text: '数学', link: '/zh/math/index' },
         { text: '工作', link: '/zh/work/index' },
         { text: '文档帮助', link: '/zh/fileTeach/index' }
     ]
