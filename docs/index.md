@@ -8,11 +8,11 @@ hero:
   tagline: '最近更新'
   actions:
     - theme: brand
+      text: 老友记
+      link: /zh/english/friends/season1/episode01
+    - theme: alt
       text: Vue3
       link: /zh/programming/vue/vue2/downloadUse
-    # - theme: alt
-    #   text: Nginx
-    #   link: /zh/programming/nginx/downloadUse
 
 features:
   - title: Vue2
