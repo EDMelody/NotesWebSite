@@ -1,5 +1,5 @@
 import { DefaultTheme, defineConfig } from 'vitepress'
-
+import { sidebarEnglishFrends } from './zhSidebar/englishFriends.ts'
 export const zh = defineConfig({
     lang: 'en',
     title: '三鲜馄饨',
@@ -17,7 +17,8 @@ export const zh = defineConfig({
         '/zh/programming/vue/vue3/': sidebarVue3(),
         '/zh/programming/nginx/': sidebarNginx(),
         '/zh/programming/git/': sidebarGit(),
-        '/zh/programming/node/': sidebarNode()
+        '/zh/programming/node/': sidebarNode(),
+        '/zh/english/friends/': sidebarEnglishFrends(),
       },
   
       docFooter: {
@@ -67,7 +68,13 @@ function nav(): DefaultTheme.NavItem[] {
                 { text: 'scoop', link: '/zh/programming/scoop/index' },
             ],
         },
-        { text: '数学', link: '/zh/math/index' },
+        { text: '英语',
+            items: [
+                { text: '首页', link: '/zh/english/index' },
+                { text: '老友记', link: '/zh/english/friends/season1/episode01.md'}
+            ]
+        },
+        // { text: '数学', link: '/zh/math/index' },
         { text: '工作', link: '/zh/work/index' },
         { text: '文档帮助', link: '/zh/fileTeach/index' }
     ]
