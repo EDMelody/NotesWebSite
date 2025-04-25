@@ -1,5 +1,7 @@
 import { DefaultTheme, defineConfig } from 'vitepress'
 import { sidebarEnglishFrends } from './zhSidebar/englishFriends.ts'
+import { sidebarWork } from './zhSidebar/work.ts'
+
 export const zh = defineConfig({
     lang: 'en',
     title: '三鲜馄饨',
@@ -19,6 +21,7 @@ export const zh = defineConfig({
         '/zh/programming/git/': sidebarGit(),
         '/zh/programming/node/': sidebarNode(),
         '/zh/english/friends/': sidebarEnglishFrends(),
+        '/zh/work/': sidebarWork()
       },
   
       docFooter: {
