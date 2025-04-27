@@ -100,10 +100,10 @@ function sidebarVue2(): DefaultTheme.SidebarItem[] {
             text: 'Vue2组件封装',
             collapsed: false,
             items: [
-                {
-                    text: '搜索commonSearch',
-                    link: '/zh/programming/vue/vue2/components/elemSearch'
-                }
+                // {
+                //     text: '搜索commonSearch',
+                //     link: '/zh/programming/vue/vue2/components/elemSearch'
+                // }
             ]
         },
         {
