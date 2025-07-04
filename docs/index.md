@@ -8,8 +8,9 @@ hero:
   tagline: '最近更新'
   actions:
     - theme: brand
-      text: 老友记
-      link: /zh/english/friends/season1/episode01
+      text: 工作
+      link: /zh/work/index
+      # link: /zh/work/2025/July/0704
     - theme: alt
       text: Vue3
       link: /zh/programming/vue/vue2/downloadUse
