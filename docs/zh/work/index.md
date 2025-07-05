@@ -2,14 +2,40 @@
  * @Author: 
  * @Date: 2025-04-18 15:07:42
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2025-07-04 11:23:12
+ * @LastEditTime: 2025-07-05 15:21:00
  * @FilePath: \vuepress-vite\docs\zh\work\index.md
  * @Description: 
  * 
 -->
 
+```ts
 
+{
+  path: '/sortingProgressDetail',
+  name: 'sortingProgressDetail',
+  component: () => import('@/views/tms/sortingProgress/sortingProgressDetail.vue'),
+  meta: {
+    title: 'sortingProgressDetail',
+    keepAlive: true
+  }
+},
+```
 ## 近期修改
+
+
+## 近期模板使用
+```ts
+// 移动端获取登录用户信息
+import { useUserStore } from '@/stores/userInfo.js'
+userInfo.value = await useUserStore().getUserInfo()
+
+```
+```ts
+// 移动端获取codeList列表
+import { handleGetCodeListEvent } from '@/utils/publicMethods.js'
+await handleGetCodeListEvent('')
+```
+
 
 
 ## 移动端组件升级修改统一vant
