@@ -1,207 +1,214 @@
-import { DefaultTheme, defineConfig } from 'vitepress'
-import { sidebarEnglishFrends } from './zhSidebar/englishFriends.ts'
-import { sidebarWork } from './zhSidebar/work.ts'
+import { DefaultTheme, defineConfig } from "vitepress";
+import { sidebarEnglishFrends } from "./zhSidebar/englishFriends.ts";
+import { sidebarWork } from "./zhSidebar/work.ts";
 
 export const zh = defineConfig({
-    lang: 'en',
-    title: '三鲜馄饨',
-    description: "",
-    lastUpdated: true,
-    themeConfig: {
-      outline: {
-        label: '页面导航'
-      },
-      // https://vitepress.dev/reference/default-theme-config
-      nav: nav(),
-  
-      sidebar: {
-        '/zh/programming/vue/vue2/': sidebarVue2(),
-        '/zh/programming/vue/vue3/': sidebarVue3(),
-        '/zh/programming/nginx/': sidebarNginx(),
-        '/zh/programming/git/': sidebarGit(),
-        '/zh/programming/node/': sidebarNode(),
-        '/zh/english/friends/': sidebarEnglishFrends(),
-        '/zh/work/': sidebarWork()
-      },
-  
-      docFooter: {
-        prev: '上一卷',
-        next: '下一卷'
-      },
-      
-      editLink: {
-        pattern: 'https://github.com/EDMelody/NotesWebSite/tree/master/docs/:path',
-        text: '在 GitHub 上编辑此页面'
-      },
-  
-      lastUpdated: {
-        text: '最后更新于',
-        // formatOptions: {
-        //   dateStyle: 'short',
-        //   timeStyle: 'medium'
-        // }
-      },
-      // langMenuLabel: '多语言',
-      // returnToTopLabel: '回到顶部',
-      // sidebarMenuLabel: '菜单',
-      // darkModeSwitchLabel: '主题',
-      // lightModeSwitchTitle: '切换到浅色模式',
-      // darkModeSwitchTitle: '切换到深色模式'
-      socialLinks: [
-        { icon: 'github', link: 'https://github.com/EDMelody/NotesWebSite' }
-      ]
-    }
-})
+  lang: "en",
+  title: "三鲜馄饨",
+  description: "",
+  lastUpdated: true,
+  themeConfig: {
+    outline: {
+      label: "页面导航",
+    },
+    // https://vitepress.dev/reference/default-theme-config
+    nav: nav(),
+
+    sidebar: {
+      "/zh/programming/vue/vue2/": sidebarVue2(),
+      "/zh/programming/vue/vue3/": sidebarVue3(),
+      "/zh/programming/nginx/": sidebarNginx(),
+      "/zh/programming/git/": sidebarGit(),
+      "/zh/programming/node/": sidebarNode(),
+      "/zh/english/friends/": sidebarEnglishFrends(),
+      "/zh/work/": sidebarWork(),
+    },
+
+    docFooter: {
+      prev: "上一卷",
+      next: "下一卷",
+    },
+
+    editLink: {
+      pattern:
+        "https://github.com/EDMelody/NotesWebSite/tree/master/docs/:path",
+      text: "在 GitHub 上编辑此页面",
+    },
+
+    lastUpdated: {
+      text: "最后更新于",
+      // formatOptions: {
+      //   dateStyle: 'short',
+      //   timeStyle: 'medium'
+      // }
+    },
+    // langMenuLabel: '多语言',
+    // returnToTopLabel: '回到顶部',
+    // sidebarMenuLabel: '菜单',
+    // darkModeSwitchLabel: '主题',
+    // lightModeSwitchTitle: '切换到浅色模式',
+    // darkModeSwitchTitle: '切换到深色模式'
+    socialLinks: [
+      { icon: "github", link: "https://github.com/EDMelody/NotesWebSite" },
+    ],
+  },
+});
 
 // 顶部导航栏
 function nav(): DefaultTheme.NavItem[] {
-    return [
-        { text: '首页', link: '/' },
-        { text: '编程',
-            items: [
-                { text: 'vue版本', items: 
-                    [
-                        { text: 'vue2', link: '/zh/programming/vue/vue2/downloadUse' },
-                        { text: 'vue3', link: '/zh/programming/vue/vue3/downloadUse' }
-                    ] 
-                },
-                { text: 'nginx', link: '/zh/programming/nginx/downloadUse' },
-                { text: 'git', link: '/zh/programming/git/reference' },
-                { text: 'node', link: '/zh/programming/node/downloadUse' },
-                { text: 'scoop', link: '/zh/programming/scoop/index' },
-            ],
+  return [
+    { text: "首页", link: "/" },
+    {
+      text: "编程",
+      items: [
+        {
+          text: "vue版本",
+          items: [
+            { text: "vue2", link: "/zh/programming/vue/vue2/downloadUse" },
+            { text: "vue3", link: "/zh/programming/vue/vue3/downloadUse" },
+          ],
         },
-        { text: '英语',
-            items: [
-                { text: '首页', link: '/zh/english/index' },
-                { text: '老友记', link: '/zh/english/friends/season1/episode01.md'}
-            ]
-        },
-        // { text: '数学', link: '/zh/math/index' },
-        { text: '工作', link: '/zh/work/index' },
-        { text: '文档帮助', link: '/zh/fileTeach/index' }
-    ]
+        { text: "nginx", link: "/zh/programming/nginx/downloadUse" },
+        { text: "git", link: "/zh/programming/git/reference" },
+        { text: "node", link: "/zh/programming/node/downloadUse" },
+        { text: "scoop", link: "/zh/programming/scoop/index" },
+      ],
+    },
+    // { text: '英语',
+    //     items: [
+    //         { text: '首页', link: '/zh/english/index' },
+    //         { text: '老友记', link: '/zh/english/friends/season1/episode01.md'}
+    //     ]
+    // },
+    // { text: '数学', link: '/zh/math/index' },
+    // { text: '工作', link: '/zh/work/index' },
+    { text: "文档帮助", link: "/zh/fileTeach/index" },
+  ];
 }
 
 // vue侧边栏
 function sidebarVue2(): DefaultTheme.SidebarItem[] {
-    return [
+  return [
+    {
+      text: "Vue2",
+      collapsed: false,
+      items: [
         {
-            text: 'Vue2',
-            collapsed: false,
-            items: [
-                {
-                    text: '安装使用',
-                    link: '/zh/programming/vue/vue2/downloadUse'
-                }
-            ]
+          text: "安装使用",
+          link: "/zh/programming/vue/vue2/downloadUse",
         },
+      ],
+    },
+    {
+      text: "Vue2组件封装",
+      collapsed: false,
+      items: [
         {
-            text: 'Vue2组件封装',
-            collapsed: false,
-            items: [
-                // {
-                //     text: '搜索commonSearch',
-                //     link: '/zh/programming/vue/vue2/components/elemSearch'
-                // }
-            ]
-        },
-        {
-            text: '相关问题',
-            collapsed: false,
-            items: [
-                {
-                    text: 'el-table问题',
-                    link: '/zh/programming/vue/vue2/question/index'
-                }
-            ]
+            text: '搜索commonSearch',
+            link: '/zh/programming/vue/vue2/components/elemSearch'
         }
-    ]
+      ],
+    },
+    {
+      text: "相关问题",
+      collapsed: false,
+      items: [
+        {
+          text: "el-table问题",
+          link: "/zh/programming/vue/vue2/question/index",
+        },
+      ],
+    },
+  ];
 }
 function sidebarVue3(): DefaultTheme.SidebarItem[] {
   return [
-      {
-          text: 'Vue3',
-          collapsed: false,
-          items: [
-              {
-                  text: '安装使用',
-                  link: '/zh/programming/vue/vue3/downloadUse'
-              }
-          ]
-      },
-      {
-          text: 'Vue3组件封装',
-          collapsed: false,
-          items: []
-      },
-      {
-          text: 'Vue3问题',
-          collapsed: false,
-          items: [
-              {
-                  text: '类型断言',
-                  link: '/zh/programming/vue/vue3/question/typeAssertion'
-              }
-          ]
-      },
-  ]
+    {
+      text: "Vue3",
+      collapsed: false,
+      items: [
+        {
+          text: "安装使用",
+          link: "/zh/programming/vue/vue3/downloadUse",
+        },
+      ],
+    },
+    {
+      text: "Vue3组件封装",
+      collapsed: false,
+      items: [],
+    },
+    {
+      text: "Vue3问题",
+      collapsed: false,
+      items: [
+        {
+          text: "类型断言",
+          link: "/zh/programming/vue/vue3/question/typeAssertion",
+        },
+        {
+          text: "桌面应用打包",
+          link: "/zh/programming/vue/vue3/question/useElectron",
+        },
+      ],
+    },
+  ];
 }
 
 // nginx侧边栏
 function sidebarNginx(): DefaultTheme.SidebarItem[] {
-    return [
+  return [
+    {
+      text: "Nginx",
+      items: [
         {
-            text: 'Nginx',
-            items: [
-                {
-                    text: '配置详解',
-                    link: '/zh/programming/nginx/downloadUse'
-                },
-                {
-                    text: '命令',
-                    link: '/zh/programming/nginx/command'
-                },
-            ]
-        }
-    ]
+          text: "配置详解",
+          link: "/zh/programming/nginx/downloadUse",
+        },
+        {
+          text: "命令",
+          link: "/zh/programming/nginx/command",
+        },
+      ],
+    },
+  ];
 }
 
 // git侧边栏
 function sidebarGit(): DefaultTheme.SidebarItem[] {
-    return [
+  return [
+    {
+      text: "Git",
+      items: [
         {
-            text: 'Git',
-            items: [
-                {
-                    text: '命令',
-                    link: '/zh/programming/git/reference'
-                },
-            ]
-        }
-    ]
+          text: "命令",
+          link: "/zh/programming/git/reference",
+        },
+      ],
+    },
+  ];
 }
 
 // node侧边栏
 function sidebarNode(): DefaultTheme.SidebarItem[] {
-    return [
+  return [
+    {
+      text: "Node",
+      items: [
         {
-            text: 'Node',
-            items: [
-                {
-                    text: '安装',
-                    link: '/zh/programming/node/downloadUse'
-                }
-            ]
+          text: "安装",
+          link: "/zh/programming/node/downloadUse",
         },
+      ],
+    },
+    {
+      text: "Node相关问题",
+      items: [
         {
-            text: 'Node相关问题',
-            items: [
-                {
-                    text: 'cnpm安装报错(node版本14.18.2',
-                    link: '/zh/programming/node/question/cnpmInstallError'
-                },
-            ]
-        }
-    ]
+          text: "cnpm安装报错(node版本14.18.2",
+          link: "/zh/programming/node/question/cnpmInstallError",
+        },
+      ],
+    },
+  ];
 }

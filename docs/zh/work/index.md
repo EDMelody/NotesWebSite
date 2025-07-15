@@ -2,7 +2,7 @@
  * @Author: 
  * @Date: 2025-04-18 15:07:42
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2025-07-09 18:09:24
+ * @LastEditTime: 2025-07-10 10:52:31
  * @FilePath: \vuepress-vite\docs\zh\work\index.md
  * @Description: 
  * 
@@ -28,18 +28,20 @@ notDeliveryV2修改到了顶部query调试
 
 - /tms/delivery/crossBridge/crossBridgeApply.vue<Badge type="tip" text="车辆过路过桥费" /> `送货员`
 - /tms/delivery/crossBridge/crossBridgeApplyAdd.vue<Badge type="tip" text="车辆过路过桥费-新增" /> `送货员`
-- /tms/delivery/crossBridge/crossBridgeReview.vue<Badge type="tip" text="车辆过路过桥费审核" /> `送货管理员`
-- /tms/delivery/crossBridge/crossBridgeReviewEdit.vue<Badge type="tip" text="车辆过路过桥费审核-编辑" /> `送货管理员`
-- /tms/delivery/routeAdjustApproval/index.vue<Badge type="tip" text="送货/配送线路调整审批" /> `送货管理员`
+- /tms/management/crossBridge/crossBridgeReview.vue<Badge type="tip" text="车辆过路过桥费审核" /> `送货管理员`
+- /tms/management/crossBridge/crossBridgeReviewEdit.vue<Badge type="tip" text="车辆过路过桥费审核-编辑" /> `送货管理员`
+- /tms/management/routeAdjustApproval/index.vue<Badge type="tip" text="送货/配送线路调整审批" /> `送货管理员`
 - /tms/delivery/sortingProgress/sortingProgress.vue<Badge type="tip" text="分拣进度查询" /> `送货员`
 - /tms/delivery/sortingProgress/sortingProgressDetail.vue<Badge type="tip" text="订单分拣进度查询" /> `送货员`
-- /tms/delivery/ticket/ticketList.vue<Badge type="tip" text="发票信息审核" /> `送货管理员`
-- /tms/delivery/ticket/ticketDetail.vue<Badge type="tip" text="发票信息审核-明细" /> `送货管理员`
+- /tms/management/ticket/ticketList.vue<Badge type="tip" text="发票信息审核" /> `送货管理员`
+- /tms/management/ticket/ticketDetail.vue<Badge type="tip" text="发票信息审核-明细" /> `送货管理员`
 - /tms/delivery/leaveApplication/index.vue<Badge type="tip" text="送货人员请假申请" /> `送货管`
-- /tms/delivery/leaveApplication/review.vue<Badge type="tip" text="请假审批" /> `送货管理员`
-- /tms/delivery/leaveApplication/reviewDetail.vue<Badge type="tip" text="请假审批-明细" /> `送货管理员`
+- /tms/management/leaveApplication/review.vue<Badge type="tip" text="请假审批" /> `送货管理员`
+- /tms/management/leaveApplication/reviewDetail.vue<Badge type="tip" text="请假审批-明细" /> `送货管理员`
 - /tms/delivery/transfer/transshipment.vue<Badge type="tip" text="中转发货" /> `送货员`
 - /tms/delivery/transfer/transferReceive.vue<Badge type="tip" text="中转收货" /> `送货员`
+- /tms/management/transfer/returnJourney.vue<Badge type="tip" text="中转返程" /> `送货管理员`
+- /tms/management/transfer/returnJourneyConfirm.vue<Badge type="tip" text="中转返程确认" /> `送货管理员`
 
 
 ## 近期模板使用

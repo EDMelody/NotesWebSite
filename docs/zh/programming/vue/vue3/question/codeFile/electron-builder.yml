@@ -1,0 +1,15 @@
+appId: com.example.myapp
+productName: 应用名称
+directories:
+  output: release
+files:
+  - dist
+  - electron
+extraMetadata:
+  main: electron/main.js
+win:
+  sign: false
+  signingHashAlgorithms: []
+  target:
+    - nsis
+electronVersion: 29.3.1
