@@ -1,5 +1,5 @@
 import { DefaultTheme, defineConfig } from "vitepress";
-import { sidebarEnglishFrends } from "./zhSidebar/englishFriends.ts";
+import { sidebarEnglishFriends } from "./zhSidebar/englishFriends.ts";
 import { sidebarWork } from "./zhSidebar/work.ts";
 
 export const zh = defineConfig({
@@ -20,7 +20,7 @@ export const zh = defineConfig({
       "/zh/programming/nginx/": sidebarNginx(),
       "/zh/programming/git/": sidebarGit(),
       "/zh/programming/node/": sidebarNode(),
-      "/zh/english/friends/": sidebarEnglishFrends(),
+      "/zh/english/friends/": sidebarEnglishFriends(),
       "/zh/work/": sidebarWork(),
     },
 
@@ -74,12 +74,13 @@ function nav(): DefaultTheme.NavItem[] {
         { text: "scoop", link: "/zh/programming/scoop/index" },
       ],
     },
-    // { text: '英语',
-    //     items: [
-    //         { text: '首页', link: '/zh/english/index' },
-    //         { text: '老友记', link: '/zh/english/friends/season1/episode01.md'}
-    //     ]
-    // },
+    { text: '英语',
+        items: [
+            { text: '首页', link: '/zh/english/index' },
+            { text: '老友记', link: '/zh/english/friends/season1/episode01.md'},
+            { text: '神秘宝藏', link: '/zh/english/mysteriousTreasure/day01/01.md' }
+        ]
+    },
     // { text: '数学', link: '/zh/math/index' },
     // { text: '工作', link: '/zh/work/index' },
     { text: "文档帮助", link: "/zh/fileTeach/index" },

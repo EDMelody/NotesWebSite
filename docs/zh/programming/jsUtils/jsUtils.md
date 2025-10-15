@@ -1,8 +1,8 @@
 <!--
  * @Author: 
  * @Date: 2025-09-09 17:05:42
- * @LastEditors: 
- * @LastEditTime: 2025-09-26 16:40:17
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2025-10-15 16:43:48
  * @FilePath: \vuepress-vite\docs\zh\programming\jsUtils\jsUtils.md
  * @Description: 
  * 
@@ -30,7 +30,7 @@ let arrTarget = [
 ```
 
 ```js
-// 递归处理数组转树
+// 递归处理 数组 转 树
 recursionData(list) {
   const buildTree = (items, parentId = '-1') => {
     return items
@@ -43,7 +43,7 @@ recursionData(list) {
   return buildTree(list)
 }
 
-// 递归处理树转数组
+// 递归处理 树 转 数组
 function flattenTree(arr, result = []) {
   if (!Array.isArray(arr)) return result
   arr.forEach(item => {
