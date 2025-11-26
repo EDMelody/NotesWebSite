@@ -17,6 +17,7 @@ import Test from './elemSearch/test.vue'
 ## 举个栗子
 
 :::details 组件代码
+<!-- <<< @/zh/programming/vue/code/vue2/RollingNumber/RollingNumber.vue{vue} -->
 <<< @/zh/programming/vue/code/vue2/elemSearch/elemSearch.vue{vue}
 :::
 :::details 调用实例

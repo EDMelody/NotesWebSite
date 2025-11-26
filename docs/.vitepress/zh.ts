@@ -105,6 +105,15 @@ function sidebarVue2(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         {
+            text: '常用组件',
+            items: [
+              {
+                text: "数字滚动",
+                link: "/zh/programming/vue/vue2/components/index",
+              }
+            ]
+        },
+        {
             text: '搜索commonSearch',
             link: '/zh/programming/vue/vue2/components/elemSearch'
         }
