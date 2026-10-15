@@ -1,4 +1,4 @@
-import{_ as i,c as a,o as n,a_ as h}from"./chunks/framework.CC6ejVHf.js";const g=JSON.parse('{"title":"El-Table","description":"","frontmatter":{},"headers":[],"relativePath":"zh/programming/vue/vue2/question/index.md","filePath":"zh/programming/vue/vue2/question/index.md","lastUpdated":1745205477000}'),l={name:"zh/programming/vue/vue2/question/index.md"};function k(t,s,p,e,E,r){return n(),a("div",null,s[0]||(s[0]=[h(`<p><a href="https://element.eleme.cn/#/zh-CN" target="_blank" rel="noreferrer">ElmentUI官方文档</a></p><h1 id="el-table" tabindex="-1">El-Table <a class="header-anchor" href="#el-table" aria-label="Permalink to &quot;El-Table&quot;">​</a></h1><p>1.列名动态切换，导致设置fixed列渲染问题 2.虚拟列表</p><h2 id="_1-el-table列名动态切换-导致设置fixed列渲染问题" tabindex="-1">1. el-table列名动态切换，导致设置fixed列渲染问题 <a class="header-anchor" href="#_1-el-table列名动态切换-导致设置fixed列渲染问题" aria-label="Permalink to &quot;1. el-table列名动态切换，导致设置fixed列渲染问题&quot;">​</a></h2><p>在 Vue 中，当使用动态添加 <code>&lt;el-table-column&gt;</code> 时，使用 Vue 的 nextTick 方法来确保 DOM 更新完成后再进行操作。例如，可以在添加列后使用 nextTick 来重新计算列宽，代码如下：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>  this.$nextTick(() =&gt; {</span></span>
+import{_ as i,c as a,o as n,a_ as l}from"./chunks/framework.CC6ejVHf.js";const g=JSON.parse('{"title":"El-Table","description":"","frontmatter":{},"headers":[],"relativePath":"zh/programming/vue/vue2/question/index.md","filePath":"zh/programming/vue/vue2/question/index.md","lastUpdated":1763435841000}'),p={name:"zh/programming/vue/vue2/question/index.md"};function t(h,s,e,k,E,r){return n(),a("div",null,s[0]||(s[0]=[l(`<p><a href="https://element.eleme.cn/#/zh-CN" target="_blank" rel="noreferrer">ElmentUI官方文档</a></p><h1 id="el-table" tabindex="-1">El-Table <a class="header-anchor" href="#el-table" aria-label="Permalink to &quot;El-Table&quot;">​</a></h1><p>1.列名动态切换，导致设置fixed列渲染问题 2.虚拟列表</p><h2 id="_1-el-table列名动态切换-导致设置fixed列渲染问题" tabindex="-1">1. el-table列名动态切换，导致设置fixed列渲染问题 <a class="header-anchor" href="#_1-el-table列名动态切换-导致设置fixed列渲染问题" aria-label="Permalink to &quot;1. el-table列名动态切换，导致设置fixed列渲染问题&quot;">​</a></h2><p>在 Vue 中，当使用动态添加 <code>&lt;el-table-column&gt;</code> 时，使用 Vue 的 nextTick 方法来确保 DOM 更新完成后再进行操作。例如，可以在添加列后使用 nextTick 来重新计算列宽，代码如下：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>  this.$nextTick(() =&gt; {</span></span>
 <span class="line"><span>    this.$refs.table.doLayout();</span></span>
 <span class="line"><span>  });</span></span></code></pre></div><h2 id="_2-el-table无分页情况下-dom过多页面卡顿问题" tabindex="-1">2. el-table无分页情况下，DOM过多页面卡顿问题 <a class="header-anchor" href="#_2-el-table无分页情况下-dom过多页面卡顿问题" aria-label="Permalink to &quot;2. el-table无分页情况下，DOM过多页面卡顿问题&quot;">​</a></h2><p>template</p><div class="language-vue vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">vue</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> style</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">margin-bottom</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">10</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">px</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">;</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  &lt;el-input v-model=&quot;filterName&quot; placeholder=&quot;搜索姓名&quot; clearable style=&quot;width: 200px; margin-right: 10px;&quot; /&gt;</span></span>
@@ -101,4 +101,60 @@ import{_ as i,c as a,o as n,a_ as h}from"./chunks/framework.CC6ejVHf.js";const g
 <span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">loadMore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">()</span></span>
 <span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">bindScroll</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">()</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div>`,11)]))}const y=i(l,[["render",k]]);export{g as __pageData,y as default};
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div><h2 id="_3-项目过大引起的内存泄漏之scss问题" tabindex="-1">3. 项目过大引起的内存泄漏之SCSS问题 <a class="header-anchor" href="#_3-项目过大引起的内存泄漏之scss问题" aria-label="Permalink to &quot;3. 项目过大引起的内存泄漏之SCSS问题&quot;">​</a></h2><p>项目启动报错提示</p><div class="language-error vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">error</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>&lt;--- Last few GCs ---&gt;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>[8704:000001C85EC30770]   443473 ms: Mark-sweep 4072.3 (4128.0) -&gt; 4069.3 (4133.8) MB, 1553.5 / 0.1 ms  (average mu = 0.712, current mu = 0.318) allocation failure scavenge might not succeed</span></span>
+<span class="line"><span>[8704:000001C85EC30770]   445568 ms: Mark-sweep (reduce) 4085.3 (4133.8) -&gt; 4077.8 (4141.0) MB, 1734.4 / 0.0 ms  (+ 0.3 ms in 250 steps since start of marking, biggest step 0.0 ms, walltime since start of marking 2094 ms) (average mu = 0.536, current mu =</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&lt;--- JS stacktrace ---&gt;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>FATAL ERROR: MarkCompactCollector: young object promotion failed Allocation failed - JavaScript heap out of memory</span></span>
+<span class="line"><span> 1: 00007FF78726428F napi_wrap+133311</span></span>
+<span class="line"><span> 2: 00007FF7871FDE66 SSL_get_quiet_shutdown+63062</span></span>
+<span class="line"><span> 3: 00007FF7871FECFD node::OnFatalError+301</span></span>
+<span class="line"><span> 4: 00007FF787AE1B2E v8::Isolate::ReportExternalAllocationLimitReached+94</span></span>
+<span class="line"><span> 5: 00007FF787AC691D v8::SharedArrayBuffer::Externalize+781</span></span>
+<span class="line"><span> 6: 00007FF78797012C v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1516</span></span>
+<span class="line"><span> 7: 00007FF78795ABAB v8::internal::NativeContextInferrer::Infer+59739</span></span>
+<span class="line"><span> 8: 00007FF78793FE7F v8::internal::MarkingWorklists::SwitchToContextSlow+56975</span></span>
+<span class="line"><span> 9: 00007FF787953B6B v8::internal::NativeContextInferrer::Infer+31003</span></span>
+<span class="line"><span>10: 00007FF78794AC4D v8::internal::MarkCompactCollector::EnsureSweepingCompleted+6285</span></span>
+<span class="line"><span>11: 00007FF787952DBE v8::internal::NativeContextInferrer::Infer+27502</span></span>
+<span class="line"><span>12: 00007FF787956E0B v8::internal::NativeContextInferrer::Infer+43963</span></span>
+<span class="line"><span>13: 00007FF787960802 v8::internal::ItemParallelJob::Task::RunInternal+18</span></span>
+<span class="line"><span>14: 00007FF787960791 v8::internal::ItemParallelJob::Run+641</span></span>
+<span class="line"><span>15: 00007FF787933DF3 v8::internal::MarkingWorklists::SwitchToContextSlow+7683</span></span>
+<span class="line"><span>16: 00007FF78794B0FC v8::internal::MarkCompactCollector::EnsureSweepingCompleted+7484</span></span>
+<span class="line"><span>17: 00007FF787949934 v8::internal::MarkCompactCollector::EnsureSweepingCompleted+1396</span></span>
+<span class="line"><span>18: 00007FF7879474A8 v8::internal::MarkingWorklists::SwitchToContextSlow+87224</span></span>
+<span class="line"><span>19: 00007FF787975F11 v8::internal::Heap::LeftTrimFixedArray+929</span></span>
+<span class="line"><span>20: 00007FF787978005 v8::internal::Heap::PageFlagsAreConsistent+789</span></span>
+<span class="line"><span>21: 00007FF78796D221 v8::internal::Heap::CollectGarbage+2049</span></span>
+<span class="line"><span>22: 00007FF78796B425 v8::internal::Heap::AllocateExternalBackingStore+1349</span></span>
+<span class="line"><span>23: 00007FF7879852B5 v8::internal::GCIdleTimeHandler::ShouldDoContextDisposalMarkCompact+1029</span></span>
+<span class="line"><span>24: 00007FF787985705 v8::internal::Factory::AllocateRaw+37</span></span>
+<span class="line"><span>25: 00007FF78799ADFE v8::internal::FactoryBase&lt;v8::internal::Factory&gt;::NewStruct+94</span></span>
+<span class="line"><span>26: 00007FF787993BF5 v8::internal::Factory::NewStackTraceFrame+53</span></span>
+<span class="line"><span>27: 00007FF7879BD242 v8::internal::Isolate::CaptureSimpleStackTrace+2354</span></span>
+<span class="line"><span>28: 00007FF7879BCAD1 v8::internal::Isolate::CaptureSimpleStackTrace+449</span></span>
+<span class="line"><span>29: 00007FF7879BC21D v8::internal::Isolate::CaptureAndSetSimpleStackTrace+45</span></span>
+<span class="line"><span>30: 00007FF7879B2A00 v8::internal::MessageLocation::MessageLocation+3664</span></span>
+<span class="line"><span>31: 00007FF7879B651C v8::internal::MessageFormatter::Format+13100</span></span>
+<span class="line"><span>32: 00007FF78798AF16 v8::internal::Factory::NewError+134</span></span>
+<span class="line"><span>33: 00007FF787994C52 v8::internal::Factory::NewTypeError+162</span></span>
+<span class="line"><span>34: 00007FF7879B66C1 v8::internal::MessageHandler::MakeMessageObject+337</span></span>
+<span class="line"><span>35: 00007FF7876BC0DC v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+9596</span></span>
+<span class="line"><span>36: 00007FF787B6CF5D v8::internal::SetupIsolateDelegate::SetupHeap+474253</span></span>
+<span class="line"><span>37: 00007FF787AFD329 v8::internal::SetupIsolateDelegate::SetupHeap+16473</span></span>
+<span class="line"><span>38: 00007FF787B03122 v8::internal::SetupIsolateDelegate::SetupHeap+40530</span></span>
+<span class="line"><span>39: 0000014416B3E990</span></span>
+<span class="line"><span>npm ERR! code ELIFECYCLE</span></span>
+<span class="line"><span>npm ERR! errno 134</span></span>
+<span class="line"><span>npm ERR! hbls_pc@2.0.0 serve: \`vue-cli-service serve\`</span></span>
+<span class="line"><span>npm ERR! Exit status 134</span></span>
+<span class="line"><span>npm ERR!</span></span>
+<span class="line"><span>npm ERR! Failed at the hbls_pc@2.0.0 serve script.</span></span>
+<span class="line"><span>npm ERR! This is probably not a problem with npm. There is likely additional logging output above.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>npm ERR! A complete log of this run can be found in:</span></span>
+<span class="line"><span>npm ERR!     C:\\Users\\neusoft\\AppData\\Roaming\\npm-cache\\_logs\\2025-11-18T03_07_06_275Z-debug.log</span></span></code></pre></div><p>解决方法</p><ol><li>去除/deep/ 使用:deep代替</li><li>扁平化scss文件中的css减少计算，减少嵌套层数</li></ol>`,16)]))}const F=i(p,[["render",t]]);export{g as __pageData,F as default};
